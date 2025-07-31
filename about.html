@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <h1>About ME!</h1>
+    <img src="images/3197.JPEG" alt="" width="500" height="500">
+    <button onclick="typeWriter()" class="abtbutton">Click to learn more about me</button>
+
+
+    <p id="demo"></p>
+    <ul></ul>
+    <!-- <li>1.go into the military straight out of high school.</li>
+    <li>2.pursue my acting, modeling, and singing cereer.</li>
+    <li>3. become really sucessful and take care of my family.</li>
+    <p>i would also like to have a wife and two kids inbetween this time somewhere idk :/</p> -->
+
+
+<script>
+var i = 0;
+var txt = 'i am a 16 yrar old, 11th grade high school student that goes to mervo, i enjoy singing, drawing, acting, sports, watching movies/shows, socalizing with others, having fun, etc. My goals in life are.. 1. go into the military straight out of high school.b2.pursue my acting, modeling, and singing cereer.b3. become really sucessful and take care of my family.'
+var speed = 30;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+  
+</body>
+</html>
