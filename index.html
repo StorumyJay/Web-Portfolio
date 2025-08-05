@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"> <!-- Optional if you have CSS -->
+  <style>
+    @font-face {
+      font-family: SPACEBoy;
+      src: url(SPACEBoy!.ttf);
+    }
+    .btn-green{
+      background-color: rgb(129, 4, 255);
+    }
+    .jumbotron{
+      width: 100%;
+      height: 100%;
+      top: 0rem;
+      
+    }
+    body{
+      background-color: black;
+      height: auto;
+      padding: none;
+      margin: none;
+    }
+  </style>
+</head>
+<body style="font-family: SPACEBoy;">
+
+  <!-- ✅ Splash screen content INSIDE body -->
+  
+  <div class="jumbotron" style="position: absolute;">
+    <video width="100%" height="100%" autoplay muted loop>
+      <source src="SPACEVOID.mp4">
+    </video>
+  </div>
+
+
+  <div id="splash" style="float: left; position: relative; top: 20rem;">
+    <div class="centered">
+      <h1 id="header1">GREETINGS</h1>
+      <p id="para1" style="margin-top: 30px;">WELCOME TO THE WORLD OF JAY</p>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-green" type="button" onclick="fadeAndRedirect('contact.html')">Enter</button>
+        </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script> <!-- Link your JavaScript file -->
+</body>
+</html>
